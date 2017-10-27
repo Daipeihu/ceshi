@@ -4,9 +4,9 @@ window.onload=function(){
 		var ul_list=document.getElementById("ul_list");
 		var zy=document.getElementById("zy");
 		var flag=true;
-		document.addEventListener("touchmove",function(ev){
-				ev.preventDefault()
-			})
+//		document.addEventListener("touchmove",function(ev){
+//				ev.preventDefault()
+//			})
 		function getstyle(obj,attr){
 				return getComputedStyle(obj,null)[attr];
 			}
