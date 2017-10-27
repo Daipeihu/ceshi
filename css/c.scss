@@ -1,0 +1,69 @@
+$sc:100;
+.head{
+    a{
+        color: white;
+        width: 100%;
+        height: 100%;
+    }
+}
+form{
+//  height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 375/$sc+rem 50/$sc+rem 75/$sc+rem 50/$sc+rem;
+    label{
+        font-size: 70/$sc+rem;
+        height: 250/$sc+rem;
+        line-height:250/$sc+rem ;
+        display: flex;      
+        position: relative;
+            border: 0.1/$sc+rem solid #CCCCCC;
+        
+        input{
+            flex: 1;
+            width: 100%;
+            height:250/$sc+rem;
+            outline: none;
+            border: 0.001/$sc+rem solid #CCCCCC;
+            box-sizing: border-box;
+           padding-left:350/$sc+rem;           
+        }
+        span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 350/$sc+rem;
+            height: 350/$sc+rem;
+            text-align: center;
+            i{
+                margin-right:50/$sc+rem ;
+            }
+        }
+    }
+    .login{
+        width: 100%;
+        height: 250/$sc+rem;
+        line-height: 250/$sc+rem;
+        margin-top: 50/$sc+rem;
+        background: #ff631a;
+//      color: red;
+        opacity: 0.5;
+        outline: none;
+        border: none;
+        font-size: 85/$sc+rem;
+        color: white;
+        border-radius: 20/$sc+rem;
+    }
+    .register{
+        width: 100%;
+        font-size: 70/$sc+rem;
+        margin-top: 40/$sc+rem;
+        text-align: right;
+        a{
+            text-decoration: none;
+            color: #FF631A;
+        }
+        
+    }
+}
+

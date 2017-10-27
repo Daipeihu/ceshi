@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+$sc:100;
+header{
+    font-size: 80/$sc+rem;
+    height: 225/$sc+rem;
+    line-height:225/$sc+rem ;
+    text-align: center;
+    background: -webkit-linear-gradient(bottom left,#ff8909,#ff5b02);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    h1{
+         font-size: 80/$sc+rem;
+         font-weight: normal;
+    }
+    span{
+//      width: 225/$sc+rem;
+        height:225/$sc+rem;
+         font-size: 80/$sc+rem;       
+        display: inline-block;
+        float: left;
+//      margin-left: 10/$sc+rem;
+        position: absolute;
+        top: 10/$sc+rem;
+        left: 70/$sc+rem;
+    }
+}
+.message_top{
+    width: 100%;
+    height: 200/$sc+rem;
+    line-height: 200/$sc+rem;
+    position: relative;
+    border-bottom: 10/$sc+rem solid #CCCCCC;    
+    p{
+        width: 20/$sc+rem;
+        height: 100/$sc+rem;
+        position: absolute;
+        top: 50/$sc+rem;
+        left: 0;
+        background: #FF631A;
+    }
+    span{
+        color: #FF631A;
+        font-size: 80/$sc+rem;
+        font-weight: 500;
+        position: absolute;
+        left: 70/$sc+rem;
+        top: 0;
+    }
+}
+.box{
+    width: 100%;
+    height: 100%;
+    overflow:auto;
+    flex: 1;
+    margin-top: 225/$sc+rem;
+}
+footer{
+    font-size: 80/$sc+rem;
+    height: 225/$sc+rem;
+    line-height:225/$sc+rem ;
+    text-align: center;
+    background: -webkit-linear-gradient(bottom left,#ff8909,#ff5b02);
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    ul{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        li{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+//          color: #d6d6d6;
+            text-align: center;
+            a{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                color: white;
+                text-decoration: none;
+                i{
+                    font-size:130/$sc+rem ;
+                    line-height:140/$sc+rem  ;
+                }
+                b{
+                    font-size:50/$sc+rem ;
+                    line-height:50/$sc+rem;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
+.atvie{
+    color: #ff631a!important;
+    border-bottom: .1rem solid #ff631a;
+}
+.floatright{
+    float: right;
+}
+
+
+.telCon{
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+//  transition: all 1s;
+    .bgi{
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.2);
+    }
+    .telConarea{
+        width: 100%;
+        height: 900/$sc+rem;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        background: #fff;
+        text-align: center;
+        padding-left: 200/$sc+rem;
+        padding-right: 100/$sc+rem;
+        transition: all 1s;
+        
+        .cancel{
+            height: 300/$sc+rem;
+            line-height: 300/$sc+rem;
+            border-bottom: 1px solid #ccc;
+            span{
+                display: inline-block;
+                
+                &:nth-child(1){
+                    width: 400/$sc+rem;
+                }
+                 &:nth-child(2){
+                    width: 600/$sc+rem;
+                }
+                 &:nth-child(3){
+                    width: 200/$sc+rem;
+                    height: 200/$sc+rem;
+                    line-height: 200/$sc+rem;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    vertical-align: middle;
+                    background: linear-gradient(to bottom,#ffbf09, #ff631a);
+                    .iconfont{
+                        color: white;
+                        line-height: 200/$sc+rem;
+                    }  
+                }
+            }
+        }
+    }
+}

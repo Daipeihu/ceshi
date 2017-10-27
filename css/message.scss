@@ -1,0 +1,167 @@
+$sc:100;
+.form-head{
+    width: 100%;
+    height: 200/$sc+rem;
+    line-height:200/$sc+rem;
+    font-size: 80/$sc+rem;
+    text-align: center;
+    color: #666666;
+}
+ .last{
+    height: 100%;
+}
+textarea{
+    width: 100%;
+    height: 500/$sc+rem;
+    line-height: 110/$sc+rem;
+    font-size: 70/$sc+rem;
+    border: 0.1/$sc+rem solid #CCCCCC;
+}
+form{
+    color: #666666;
+}
+.submit{
+        width: 100%;
+        height: 200/$sc+rem;
+        line-height: 200/$sc+rem;
+        margin-top: 50/$sc+rem;
+        background: #ff631a;
+//      color: red;
+//      opacity: 0.5;
+        outline: none;
+        border: none;
+        font-size: 85/$sc+rem;
+        color: white;
+        border-radius: 20/$sc+rem;
+}
+.bottom{
+    height: 950/$sc+rem;
+    box-sizing: border-box;
+//  padding-bottom: 50/$sc+rem ;
+    font-size: 60/$sc+rem;
+    text-align: center;
+    color: #999;
+    padding-top: 50/$sc+rem;
+    .fan{
+        height: 140/$sc+rem;
+        line-height: 140/$sc+rem;
+        background: red;
+        text-align: right;
+        color: white;
+        font-size: 70/$sc+rem;
+        position: relative;
+        width: 100%;
+        background: -webkit-linear-gradient(bottom left,#ff8909,#ff5b02);
+        margin-bottom: 37/$sc+rem;
+        .top{
+            height: 140/$sc+rem;
+            line-height:140/$sc+rem; 
+           width: 200/$sc+rem;
+           position: absolute;
+           right:20/$sc+rem;
+           
+        }        
+        span{
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: 20/$sc+rem transparent solid;
+            border-bottom-color: #fff;
+            margin:0  10/$sc+rem;
+        }
+    }
+    p{
+        padding: 10/$sc+rem;
+        a{
+            text-decoration: none;
+             color: #999;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+    }
+}
+.box{
+     width: 50%;
+    float: left;
+    transform: translateX(-60%);
+    .bg{
+        height: 170/$sc+rem;
+        padding-bottom: 30/$sc+rem;
+        background: #f5f5f5;
+    
+        h3 {
+                        width: 100%;
+                        height: 140/$sc+rem;
+                        font-size: 60/$sc+rem;
+                        padding-left: 50/$sc+rem;
+                        color: #0b4646;
+                        line-height: 140/$sc+rem;
+                        color: #666666;
+                        font-weight: normal; 
+                        background: white;                 
+                        span.iconfont {
+                            font-size: 90/$sc+rem;
+                            margin-right: 20/$sc+rem;
+                            color: #ff631a;
+                        }
+                    }
+    }
+    
+    
+}
+nav {
+    flex: 1;
+    width: 30%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.7);
+    float: left;
+    margin-top: 225/$sc+rem;
+    transform: translateX(-100%);
+    ul {
+        li {
+            height: 250/$sc+rem;
+            font-size: 60/$sc+rem;
+            line-height: 250/$sc+rem;
+            cursor: pointer;
+            border-top: 0.1px solid rgba(204, 204, 204, 0.1);
+            position: relative;
+            &.active {
+                background: rgba(0, 0, 0, 0.57);
+                div {
+                    //                      display: none;
+                    height:100%;
+                    width: 25/$sc+rem;
+                    background: #FF631A;
+                    position: absolute;
+                    top:-2/$sc+rem;
+                    left: 0;
+                }
+            }
+            a {
+                color: #fff;
+                display: block;
+                margin: 0 10px 0 200/$sc+rem;
+                text-decoration: none;
+                i {
+                    font-size: 60/$sc+rem;
+                   
+                }
+            }
+        }
+    }
+}
+.zy{
+    width: 200%;
+    height: 100%;
+    transition: all 0.5s;
+}
+.ul_list{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    flex: 1;
+
+}
