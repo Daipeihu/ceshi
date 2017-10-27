@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/c.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/message.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/xq.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<!--<script type="text/javascript" src="js/xq.js" ></script>-->
+		<title></title>
+		<script>
+			document.documentElement.style.fontSize=innerWidth/16+"px";	
+		</script>
+		<script>
+			$(function(){
+				$(".top").on("touchstart",function(){
+					$(".box").scrollTop(0);
+				})
+				
+					$("#active").on("touchstart",function(){
+					$(".telCon").slideDown();
+					console.log("a")
+				})
+				$("#cancel").on("touchstart",function(){
+					$(".telCon").slideUp();
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<header class="head">
+			<a href="product.html" style="color: white;"><span class="iconfont">&#xe66e;</span></a>
+			<h1>网站—服装</h1>
+		</header>
+		<div class="box">
+			<div class="bigimg">
+				<img src="img/product/AD0Ilb_yBRAEGAAgo5yBwAUosbH6zwYwtgE4tgE!160x160.png"/>
+				<p>4服装-传统-外贸服装加工_07</p>
+			</div>
+			<div class="price">
+				<b>￥0.00</b>
+				<p>市场价:&nbsp;<span>0.00</span></p>
+			</div>
+			<ul class="move" id="move">
+				<li class="atvie">产品详情</li>
+				<li>产品参数</li>
+			</ul>
+			<div class="ul_list">
+				
+				<div class="qiehuan" id="qiehuan">				
+					<div class="tj swiper-container block" id="tj" >
+						<p>推荐产品</p>
+						<ul  class="swiper-wrapper">
+							<li class="swiper-slide">
+								<img src="img/tj/AD0Ilb_yBRAEGAAg4pyBwAUoqva6RzCpATipAQ!160x160.png"/>
+								<p>女装定制_18</p>
+								<b>0.00</b>
+							</li>
+							<li class="swiper-slide">
+								<img src="img/tj/AD0Ilb_yBRAEGAAg5JyBwAUoiMPn-wIwqQE4qQE!160x160.png"/>
+								<p>女装定制_18</p>
+								<b>0.00</b>
+							</li>
+							<li class="swiper-slide">
+								<img src="img/tj/AD0Ilb_yBRAEGAAg5ZyBwAUout3h5QQwqQE4qQE!160x160.png"/>
+								<p>女装定制_18</p>
+								<b>0.00</b>
+							</li>
+							<li class="swiper-slide">
+								<img src="img/tj/AD0Ilb_yBRAEGAAgiZ2BwAUo0uuz2AIwtgE4tgE!160x160.png"/>
+								<p>女装定制_18</p>
+								<b>0.00</b>
+							</li>
+							<li sclass="swiper-slide">
+								<img src="img/tj/AD0Ilb_yBRAEGAAgvpyBwAUo8aLQ4wIwtAE4tAE!160x160.png"/>
+								<p>女装定制_18</p>
+								<b>0.00</b>
+							</li>
+							<li class="swiper-slide">
+								<img src="img/tj/AD0Ilb_yBRAEGAAgwZyBwAUoyOHzkAUwtAE4tAE!160x160.png"/>
+								<p>女装定制_18</p>
+								<b>0.00</b>
+							</li>
+							<li class="swiper-slide">
+								<img src="img/tj/AD0Ilb_yBRAEGAAgjZ2BwAUorb7A9wYwtgE4tgE!160x160.png"/>
+								<p>女装定制_18</p>
+								<b>0.00</b>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="cs none">
+						<p><span>价格</span>￥0.0</p>
+						<p><span>销量</span>0</p>
+						<p><span>市场价</span><i></i></p>
+					</div>
+				</div>
+			</div>
+				<script>
+					var tj=document.getElementById("tj")
+					var lis=tj.getElementsByTagName("li");
+					var w=lis[0].offsetWidth;
+					console.log(document.documentElement.offsetWidth)
+					var cw=document.documentElement.offsetWidth;
+					var qiehuan=document.getElementById("qiehuan");
+					qiehuan.addEventListener("touchmove",function(ev){
+						ev.preventDefault()						
+					})
+					document.addEventListener("touchmove",function(ev){
+						ev.preventDefault()					
+					})
+					var maxw=lis[0].offsetWidth*(lis.length-2)
+					console.log(w)					
+					var mySwiper= new Swiper('.swiper-container',{
+						 width : w,
+						 autoplayDisableOnInteraction:false,
+						 freeMode:true,
+						 slidesPerView :'auto'
+					})
+					$(".move li").on("touchstart",function(){
+						var that=$(this).index()
+						console.log($(this).index())
+						$(this).addClass("atvie").siblings().removeClass("atvie");
+						$(".qiehuan").css("transform","translateX(-"+that*cw+"px)")
+					})
+					
+//					mySwiper.style.width=w+"px";
+//					console.log(mySwiper.swiper);
+				</script>
+			<div class="bottom">				
+				<div class="fan">
+					<div class="top">
+						Top<span></span>
+					</div>				
+				</div>
+				<p>xx服装有限公司&nbsp;©&nbsp;2017&nbsp; -&nbsp; 版权所有</p>
+				<p><span>手机版</span>&nbsp;|&nbsp;<a href="../pcdua/index.html"><span>电脑版</span></a>&nbsp;|&nbsp;<span>举报</span></p>
+			</div>
+		</div>
+		<footer>
+			<ul>
+				<li  id="active">
+					<a href="#">	
+						<i class="iconfont">&#xe683;</i>
+						<b>电话咨询</b>
+					</a>
+				</li>
+				<li>
+					<a href="#">	
+						<i class="iconfont">&#xe654;</i>
+						<b>信息咨询</b>
+					</a>
+				</li>
+				<li>
+					<a href="message.html">	
+						<i class="iconfont">&#xe690;</i>
+						<b>在线留言</b>
+					</a>
+				</li>
+				<li>
+					<a href="login.html">						
+						<i class="iconfont">&#xe61b;</i>
+						<b>我</b>
+					</a>
+				</li>
+			</ul>
+		</footer>
+		<!--电话-->
+		<div class="telCon">
+			<div class="bg"></div>
+			<div class="telConarea">
+				<p class="cancel">
+					<span>电话咨询</span>
+					<span>080808</span>
+					<span>
+						<i class="iconfont">&#xe683;</i>
+					</span>
+				</p>
+				<p class="cancel">
+					<span>电话</span>
+					<span>11111111</span>
+					<span>
+						<i class="iconfont">&#xe683;</i>
+					</span>
+				</p>
+				<p class="cancel" id="cancel">取消</p>
+			</div>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,40 @@
+.bigimg { height: 16rem; position: relative; }
+.bigimg img { width: 100%; }
+.bigimg p { position: absolute; width: 100%; font-size: 0.7rem; padding: 0.9rem 0.8rem; bottom: 0.1rem; left: 0; color: white; }
+
+.price { height: 2.75rem; width: 100%; padding-left: .45rem; border-bottom: 1px solid #ddd; text-align: left; position: relative; }
+.price b { color: #ff631a; font-size: 1rem; }
+.price p { color: #999; font-size: 0.6rem; }
+.price p span { text-decoration: line-through; }
+
+.box .move { display: flex; list-style: none; border-bottom: 0.01rem solid #CCCCCC; }
+.box .move li { flex: 1; text-align: center; color: #333333; height: 2.2rem; line-height: 2.2rem; font-size: 0.6rem; }
+
+.tj { margin-top: 1.25rem; overflow: hidden; width: 50%; float: left; }
+.tj p { border-top: 1px solid #ccc; height: 2rem; line-height: 2rem; padding-left: 0.45rem; font-size: 0.6rem; color: #333333; }
+.tj ul { display: flex; list-style: none; transform: translate3d(0, 0, 0); transition: all 2s; }
+.tj ul li { flex: 1; margin-bottom: 0.5rem; margin-left: 0.5rem; line-height: 0.9rem; position: relative; }
+.tj ul li img { width: 5.95rem; }
+.tj ul li p { position: absolute; top: 4rem; left: 0; color: white; background: rgba(0, 0, 0, 0.5); border: none; }
+.tj ul li b { font-size: 0.7rem; color: #ff631a; }
+
+.cs { width: 50%; float: left; }
+.cs p { height: 2rem; border-bottom: 0.01rem; font-size: 0.65rem; line-height: 2rem; color: #4e4e4e; }
+.cs p span { display: inline-block; width: 33%; text-indent: 1rem; color: #b8b8b8; height: 100%; font-size: 0.6rem; }
+.cs p i { font-style: normal; text-decoration: line-through; }
+
+.qiehuan { width: 200%; transform: translateX(0); transition: all 0.5s; }
+
+.bottom { clear: both; }
+
+.ul_list { width: 100%; overflow: hidden; position: relative; top: 0; left: 0; }
+
+.box { width: 100%; height: 100%; overflow: auto; flex: 1; margin-top: 2.25rem; transform: translateX(0); }
+
+footer ul { height: 100%; display: flex; border-top: solid 0.5px #ced6cf; }
+footer ul li { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; }
+footer ul li a { flex: 1; display: flex; flex-direction: column; color: white; text-decoration: none; }
+footer ul li a b { font-size: 0.5rem; line-height: 0.5rem; font-weight: normal; }
+footer ul li a i { line-height: 1.4rem; }
+
+/*# sourceMappingURL=xq.css.map */

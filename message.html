@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/c.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/message.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<script type="text/javascript" src="js/xq.js" ></script>
+		<title></title>
+		<script>
+			document.documentElement.style.fontSize=innerWidth/16+"px";	
+		</script>
+		<script>
+			$(function(){
+				$(".top").on("touchstart",function(){
+					$(".box").scrollTop(0);
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<header class="head">
+			<span class="iconfont" id="l">&#xe608;</span>
+			<h1>网站—服装</h1>
+		</header>
+		<div class="ul_list" id="ul_list">
+		<div class="zy" id="zy">
+		<!--导航栏-->
+		<nav id="nav">
+					<ul>
+						<li >
+							<div></div>
+							<a href="index.html">
+								<i class="iconfont">&#xe60e;</i>
+								<span>首页</span>
+								<i class="iconfont floatright">&#xe649;</i>
+							</a>
+						</li>
+						<li>
+							<div></div>
+							<a href="product.html">
+								<i class="iconfont">&#xe64b;</i>
+								<span>产品展示</span>
+								<i class="iconfont floatright">&#xe649;</i>
+							</a>
+						</li>
+						<li>
+							<div></div>
+							<a href="news.html">
+								<i class="iconfont">&#xe603;</i>
+								<span>新闻动态</span>
+								<i class="iconfont floatright">&#xe649;</i>
+							</a>
+						</li>
+						<li class="active">
+							<div></div>
+							<a href="message.html">
+								<i class="iconfont">&#xe62b;</i>
+								<span>留言板</span>
+								<i class="iconfont floatright">&#xe649;</i>
+							</a>
+							
+						</li>
+						<li>
+							<div></div>
+							<a href="about us.html">
+								<i class="iconfont">&#xe61b;</i>
+								<span>关于我们</span>
+								<i class="iconfont floatright">&#xe649;</i>
+							</a>
+							
+						</li>
+					</ul>
+				</nav>
+			<!--end-->
+		
+		
+		
+		<div class="box">
+			<div class="bg">
+				
+				<h3><span class="iconfont">&#xe501;</span>购物车(<span>0</span>)</h3>
+			</div>
+			
+			<div class="message_top">
+				<p></p>
+				<span>留言板</span>
+			</div>
+			<form action="" method="">
+				<div class="form-head">
+					<span></span>
+					<span>发表您的留言：</span>
+				</div>
+				<label><span><i class="iconfont">&#xe692;</i>姓名</span><input type="text" name="" id="" value="" placeholder="请输入姓名(必填)"/></label>
+				<label><span><i class="iconfont">&#xe691;</i>邮箱</span><input type="text" name="" id="" value="" placeholder="请输入邮箱"/></label>
+				<label><span><i class="iconfont">&#xe60a;</i>电话</span><input type="tel" name="" id="" value="" placeholder="请输入电话"/></label>
+				<label class="last"><span><i class="iconfont">&#xe642;</i>内容</span>
+					<textarea name="" rows="" cols="">
+						
+					</textarea></label>
+				<input type="submit" value="提交"/ class="submit">
+				<!--<div class="register"><span>免费注册</span></div>-->
+			</form>
+			<div class="bottom">
+				
+				<div class="fan">
+					<div class="top">
+						Top<span></span>
+					</div>				
+				</div>
+				<p>xx服装有限公司&nbsp;©&nbsp;2017&nbsp; -&nbsp; 版权所有</p>
+				<p><span>手机版</span>&nbsp;|&nbsp;<a href="../pcdua/index.html"><span>电脑版</span></a>&nbsp;|&nbsp;<span>举报</span></p>
+			</div>
+		</div>
+		
+		</div>
+		</div>
+		
+		<footer>
+			<ul>
+				<li  id="active">
+					<a href="#">	
+						<i class="iconfont">&#xe683;</i>
+						<b>电话咨询</b>
+					</a>
+				</li>
+				<li>
+					<a href="#">	
+						<i class="iconfont">&#xe654;</i>
+						<b>信息咨询</b>
+					</a>
+				</li>
+				<li>
+					<a href="message.html">	
+						<i class="iconfont">&#xe690;</i>
+						<b>在线留言</b>
+					</a>
+				</li>
+				<li>
+					<a href="login.html">						
+						<i class="iconfont">&#xe61b;</i>
+						<b>我</b>
+					</a>
+				</li>
+			</ul>
+		</footer>
+		<!--电话-->
+		<div class="telCon">
+			<div class="bg"></div>
+			<div class="telConarea">
+				<p class="cancel">
+					<span>电话咨询</span>
+					<span>080808</span>
+					<span>
+						<i class="iconfont">&#xe683;</i>
+					</span>
+				</p>
+				<p class="cancel">
+					<span>电话</span>
+					<span>11111111</span>
+					<span>
+						<i class="iconfont">&#xe683;</i>
+					</span>
+				</p>
+				<p class="cancel" id="cancel">取消</p>
+			</div>
+		</div>
+
+	</body>
+</html>

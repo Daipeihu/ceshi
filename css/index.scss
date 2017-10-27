@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.floatright{
+    float: right;
+}
+$sc:100;
+.container{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    header,
+    footer{
+        font-size: 80/$sc+rem;
+        height: 225/$sc+rem;
+        text-align: center; 
+        background: linear-gradient(to bottom left, #ff8909, #ff5b02); 
+        color: white;
+    }
+//头部
+    header{
+        line-height:225/$sc+rem ;
+        span{
+            height:225/$sc+rem;
+            font-size: 80/$sc+rem;       
+            display: inline-block;
+            float: left;
+            margin-left: 50/$sc+rem;
+        }
+        h1{
+            font-size: 80/$sc+rem;
+            font-weight: normal;
+        }
+    }
+    
+    
+    .section{
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        .sectionbar{
+            transition: all 0.5s;
+            width: 200%;
+            height: 100%;
+            
+//        导航栏部
+            nav{
+                transform: translateX(-100%);
+                width: 1000/$sc+rem;
+                height: 100%;
+                float: left;
+                overflow: auto;
+                background: rgba(0,0,0,0.7);
+            
+                ul{
+                    li{
+                        height: 2.5rem;
+                        font-size: 60/$sc+rem;
+                        line-height: 2.5rem;
+                        cursor: pointer;
+                        border-top: 0.1px solid rgba(204, 204, 204, 0.1);
+                        position: relative;
+                        &.active{
+                            background: rgba(0, 0, 0, 0.57);
+                            div{
+                                height:100%;
+                                width: 25/$sc+rem;
+                                background: #FF631A;
+                                position: absolute;
+                                top:-2/$sc+rem;
+                                left: 0;
+                                
+                            }
+                            
+                        }
+                        a{
+                            color: #fff;
+                            display: block;
+                            margin:0 10px 0 200/$sc+rem;
+                            i{
+                                font-size: 60/$sc+rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            section{
+                transform: translate3d(-63%,0,0);
+                flex: 1;
+                width: 50%;
+                height: 100%;
+                float: left;
+                overflow: auto;
+                h3 {
+                    width: 100%;
+                    height: 140/$sc+rem;
+                    font-size: 60/$sc+rem;
+                    padding-left: 50/$sc+rem;
+                    color: #0b4646;
+                    line-height: 140/$sc+rem;
+                    color: #666666;
+                    font-weight: normal;
+                    span.iconfont {
+                        font-size: 90/$sc+rem;
+                        margin-right: 20/$sc+rem;
+                        color: #ff631a;
+                    }
+                }
+                
+                .swiper-container {
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }  
+                .message_top{
+                    width: 100%;
+                    height: 200/$sc+rem;
+                    line-height: 200/$sc+rem;
+                    position: relative;
+                    border-bottom: 1/$sc+rem solid #CCCCCC;
+                    p{
+                        width: 20/$sc+rem;
+                        height: 100/$sc+rem;
+                        position: absolute;
+                        top: 50/$sc+rem;
+                        left: 0;
+                        background: #FF631A;
+                    }
+                    span{
+                        color: #FF631A;
+                        font-size: 80/$sc+rem;
+                        font-weight: 500;
+                        position: absolute;
+                        
+                        top: 0;
+                        &:nth-child(2){
+                            left: 70/$sc+rem;
+                        }
+                        &:nth-child(3){
+                            right: 70/$sc+rem;
+                        }
+                    }
+                }
+                .containers{
+                    height: 1100/$sc+rem;
+                    .swiper-slide{
+                        display: flex;
+                        div{
+                            margin: 5px;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                            height: 900/$sc+rem;
+                            span:nth-child(2){
+                                display: inline-block;
+                                width: 700/$sc+rem;
+                                padding-left: 5px;
+                                font-size: 50/$sc+rem;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                    }
+                }
+        }    
+            
+            
+//          网页底部
+            .footer{
+                height: 500/$sc+rem;
+                box-sizing: border-box;
+                font-size: 60/$sc+rem;
+                text-align: center;
+                margin-top: 10px;
+                .fan{
+                    height: 140/$sc+rem;
+                    line-height: 140/$sc+rem;
+                    background: red;
+                    text-align: right;
+                    color: white;
+                    font-size: 70/$sc+rem;
+                    position: relative;
+                    width: 100%;
+                    background: -webkit-linear-gradient(bottom left,#ff8909,#ff5b02);
+                    margin-bottom: 37/$sc+rem;
+                    .top{
+                        height: 140/$sc+rem;
+                        line-height:140/$sc+rem; 
+                       width: 200/$sc+rem;
+                       position: absolute;
+                       right:20/$sc+rem;
+                       
+                    } 
+                    span{
+                        display: inline-block;
+                        width: 0;
+                        height: 0;
+                        border: 20/$sc+rem transparent solid;
+                        border-bottom-color: #fff;
+                        margin:0  10/$sc+rem;
+                    }
+                }
+                p{
+                    padding: 10/$sc+rem;
+                    a{
+                        text-decoration: none;
+                        color: #000000;
+                        -webkit-tap-highlight-color: transparent;
+                    }       
+                    
+                }
+            } 
+        }
+    }
+//  底部
+    footer{
+        ul{
+            height: 100%;
+            display: flex;
+            border-top: solid 0.5px #ced6cf;
+            li{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                a{
+                 flex: 1;
+                display: flex;
+                flex-direction: column;
+                color: white;
+                text-decoration: none;
+                b {
+                    font-size: 50/$sc+rem; 
+                    line-height: 50/$sc+rem; 
+                    font-weight: normal;
+                }
+                i {                    
+                    line-height:140/$sc+rem  ;
+                }
+                }
+                
+            }
+        }
+    }
+}
+.item{
+    width: 100%;
+    line-height: 100/$sc+rem;
+    color: #333333;
+    font-size: 70/$sc+rem;
+    p{
+     padding-left:110/$sc+rem ;
+    padding-right: 160/$sc+rem; 
+    position: relative;
+    padding-top: 60/$sc+rem;
+    padding-bottom: 40/$sc+rem;
+        .y{
+            position: absolute;
+            width: 20/$sc+rem;
+            height:20/$sc+rem;
+            top: 105/$sc+rem;
+            left: 50/$sc+rem;
+            background: #ababab;
+            border-radius: 100%;
+        }
+//      position: relative;
+        span{
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                margin-top: -30/$sc+rem;
+                right:5/$sc+rem ;
+                width: 100/$sc+rem;
+                height: 100/$sc+rem;
+                font-size: 100/$sc+rem;
+                line-height: 100/$sc+rem;
+                color: #666666; 
+                font-size: 80/$sc+rem;              
+        }
+    }
+    .time{
+        color:#ababab ;
+        font-size: 60/$sc+rem;
+        padding-top: 0;
+    }
+}
+//电话
+
+.telCon{
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+//  transition: all 1s;
+    .bg{
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.2);
+    }
+    .telConarea{
+        width: 100%;
+        height: 900/$sc+rem;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        background: #fff;
+        text-align: center;
+        padding-left: 200/$sc+rem;
+        padding-right: 100/$sc+rem;
+        transition: all 1s;
+        
+        .cancel{
+            height: 300/$sc+rem;
+            line-height: 300/$sc+rem;
+            border-bottom: 1px solid #ccc;
+            span{
+                display: inline-block;
+                
+                &:nth-child(1){
+                    width: 400/$sc+rem;
+                }
+                 &:nth-child(2){
+                    width: 600/$sc+rem;
+                }
+                 &:nth-child(3){
+                    width: 200/$sc+rem;
+                    height: 200/$sc+rem;
+                    line-height: 200/$sc+rem;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    vertical-align: middle;
+                    background: linear-gradient(to bottom,#ffbf09, #ff631a);
+                    .iconfont{
+                        color: white;
+                        line-height: 200/$sc+rem;
+                    }  
+                }
+            }
+        }
+    }
+}

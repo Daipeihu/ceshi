@@ -1,0 +1,100 @@
+$sc:100;
+.conten{
+    color: #666666;
+    width: 100%;
+    padding-bottom: 50/$sc+rem ;
+    font-size: 60/$sc+rem;
+    line-height: 160/$sc;
+//  margin: 50/$sc+rem 0;
+    background: #f5f5f5;
+    p{
+        width: 100%;
+        background: white;
+        padding: 0 50/$sc+rem;
+    }
+}
+.box{
+     width: 50%;
+    float: left;
+    transform: translateX(-60%);
+    .bg{
+        height: 170/$sc+rem;
+        padding-bottom: 30/$sc+rem;
+        background: #f5f5f5;
+    
+        h3 {
+                        width: 100%;
+                        height: 140/$sc+rem;
+                        font-size: 60/$sc+rem;
+                        padding-left: 50/$sc+rem;
+                        color: #0b4646;
+                        line-height: 140/$sc+rem;
+                        color: #666666;
+                        font-weight: normal; 
+                        background: white;                 
+                        span.iconfont {
+                            font-size: 90/$sc+rem;
+                            margin-right: 20/$sc+rem;
+                            color: #ff631a;
+                        }
+                    }
+    }
+    
+    
+}
+nav {
+    flex: 1;
+    width: 30%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.7);
+    float: left;
+    margin-top: 225/$sc+rem;
+    transform: translateX(-100%);
+    ul {
+        li {
+            height: 250/$sc+rem;
+            font-size: 60/$sc+rem;
+            line-height: 250/$sc+rem;
+            cursor: pointer;
+            border-top: 0.1px solid rgba(204, 204, 204, 0.1);
+            position: relative;
+            &.active {
+                background: rgba(0, 0, 0, 0.57);
+                div {
+                    //                      display: none;
+                    height:100%;
+                    width: 25/$sc+rem;
+                    background: #FF631A;
+                    position: absolute;
+                    top:-2/$sc+rem;
+                    left: 0;
+                }
+            }
+            a {
+                color: #fff;
+                display: block;
+                margin: 0 10px 0 200/$sc+rem;
+                text-decoration: none;
+                i {
+                    font-size: 60/$sc+rem;
+                   
+                }
+            }
+        }
+    }
+}
+.zy{
+    width: 200%;
+    height: 100%;
+    transition: all 0.5s;
+}
+.ul_list{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    flex: 1;
+
+}
