@@ -6,7 +6,7 @@ $(function(){
 	var flag=true;
 	var flag1=true;
 	$("#navbtn").click(function(ev){
-		ev.preventDefault();
+//		ev.preventDefault();
 		if(flag){
 			console.log("nav")
 			$(".sectionbar").css('transform',"translate3d("+w+"px,0,0)");
