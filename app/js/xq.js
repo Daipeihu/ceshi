@@ -12,9 +12,13 @@ window.onload=function(){
 			}
 		var w=parseInt(getstyle(nav,"width"));
 		console.log(w)
+		
+		
+		
+
 		l.addEventListener("touchstart",function(ev){
 //			alert("r")
-			ev.preventDefault();
+//			ev.preventDefault();
 			if(flag){
 					zy.style.transform="translate3d("+w+"px,0,0)";
 					flag=false;

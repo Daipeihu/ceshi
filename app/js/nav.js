@@ -5,8 +5,9 @@ $(function(){
 	var w=parseInt(getstyle($("nav")[0],"width"));
 	var flag=true;
 	var flag1=true;
-	$("#navbtn").click(function(ev){
-//		ev.preventDefault();
+	$("#navbtn")[0].addEventListener("touchstart",function(ev){
+//	click(function(ev){
+		ev.preventDefault();
 		if(flag){
 			console.log("nav")
 			$(".sectionbar").css('transform',"translate3d("+w+"px,0,0)");
