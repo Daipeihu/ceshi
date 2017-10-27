@@ -10,6 +10,8 @@ header span { height: 2.25rem; font-size: 0.8rem; display: inline-block; float: 
 .message_top p { width: 0.2rem; height: 1rem; position: absolute; top: 0.5rem; left: 0; background: #FF631A; }
 .message_top span { color: #FF631A; font-size: 0.8rem; font-weight: 500; position: absolute; left: 0.7rem; top: 0; }
 
+.ul_list { width: 100%; height: 100%; margin: 2.25rem 0; overflow: hidden; }
+
 .box { width: 50%; height: 100%; float: left; transform: translateX(-60%); overflow: auto; flex: 1; }
 
 footer { font-size: 0.8rem; height: 2.25rem; line-height: 2.25rem; text-align: center; background: -webkit-linear-gradient(bottom left, #ff8909, #ff5b02); color: white; position: fixed; left: 0; bottom: 0; width: 100%; }

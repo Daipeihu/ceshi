@@ -7,7 +7,7 @@
 .box ul li i { position: absolute; width: .2rem; height: .2rem; top: 1rem; left: .5rem; background: #ababab; border-radius: 100%; }
 .box ul li span { display: inline-block; position: absolute; top: 50%; margin-top: -0.5rem; right: 0.05rem; width: 1rem; height: 1rem; font-size: 1rem; line-height: 1rem; color: #666666; }
 
-nav { flex: 1; width: 30%; height: 100%; overflow: auto; background: rgba(0, 0, 0, 0.7); float: left; margin-top: 2.25rem; transform: translateX(-100%); }
+nav { flex: 1; width: 30%; height: 100%; overflow: auto; background: rgba(0, 0, 0, 0.7); float: left; transform: translateX(-100%); }
 nav ul li { height: 2.5rem; font-size: 0.6rem; line-height: 2.5rem; cursor: pointer; border-top: 0.1px solid rgba(204, 204, 204, 0.1); position: relative; }
 nav ul li.active { background: rgba(0, 0, 0, 0.57); }
 nav ul li.active div { height: 100%; width: 0.25rem; background: #FF631A; position: absolute; top: -0.02rem; left: 0; }

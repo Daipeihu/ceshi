@@ -140,7 +140,7 @@ $sc:100;
     height: 100%;
     overflow: auto;
     flex: 1;
-    margin-top: 2.25rem;
+    margin: 225/$sc+rem 0; 
     transform: translateX(0);
 }
  footer{
