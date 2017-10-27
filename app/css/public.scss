@@ -63,11 +63,13 @@ header{
     }
 }
 .box{
-    width: 100%;
+    width: 50%;
     height: 100%;
-    overflow:auto;
+    float: left;
+    transform: translateX(-60%);
+    overflow: auto;
     flex: 1;
-    margin-top: 225/$sc+rem;
+//  margin-top: 225/$sc+rem;
 }
 footer{
     font-size: 80/$sc+rem;

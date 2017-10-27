@@ -1,10 +1,6 @@
 $sc:100;
 .box {
-    width: 50%;
-    height: 100%;
-    float: left;
-    transform: translateX(-60%);
-    overflow: auto;
+    
      .bg{
         height: 170/$sc+rem;
         padding-bottom: 30/$sc+rem;
@@ -111,7 +107,7 @@ nav {
     overflow: auto;
     background: rgba(0, 0, 0, 0.7);
     float: left;
-    margin-top: 225/$sc+rem;
+//  margin-top: 225/$sc+rem;
     transform: translateX(-100%);
     ul {
         li {
@@ -154,6 +150,7 @@ nav {
 .ul_list{
     width: 100%;
     height: 100%;
+    padding-top: 225/$sc+rem;
     overflow: hidden;
     
 
